@@ -1,0 +1,8 @@
+
+
+RewriteEngine On
+
+RewriteRule ajax/main$ ajax/main.php [QSA]
+RewriteRule logout$ logout.php [L]
+RewriteRule ajax/poll$ ajax/poll.php [QSA]
+RewriteRule access/([a-zA-Z]+)/?$ index.php?username=$1 [L]
